@@ -1,0 +1,27 @@
+
+
+POST http://localhost:3001/api/persons HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Arto Hellas",
+    "number": 1
+}
+
+####
+
+DELETE http://localhost:3001/api/persons/63bac39082d21a27b874141a
+
+###
+
+GET http://localhost:3001/api/persons/63ba99ef463626bd6e5a911d
+
+###
+
+
+PUT http://localhost:3001/api/persons/63bac5d931b1441b3f16bda2 HTTP/1.1
+content-type: application/json
+
+{
+    "number": 12
+}
