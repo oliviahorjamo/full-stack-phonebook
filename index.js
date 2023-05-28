@@ -126,14 +126,7 @@ app.listen(PORT, () => {
 // build a CI/CD pipeline for this app to deploy the app to Fly
 // steps:
 
-// 1. create a new pipeline in the remote repo
-// runs on ubuntu 20.04
-// triggered by a push to master or a pull request
-// checks out the repo
-// installs the dependencies
-// makes a build of the frontend
-// would run the tests if existed
-// deploy to fly
+// create a fly token and add to github repo
 // make a healthcheck to fly
 
 // if you feel like it, write another pipeline for other branches than master
