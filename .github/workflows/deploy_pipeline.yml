@@ -24,3 +24,5 @@ jobs:
       - name: Build
         if: ${{ github.event.name == 'push' }}
         run: npm run deploy:full
+        env:
+          FLY_API_TOKEN: ${{ secret.FLY_API_TOKEN }}
