@@ -125,10 +125,8 @@ app.listen(PORT, () => {
 
 // build a CI/CD pipeline for this app to deploy the app to Fly
 // steps:
-
-// create a fly token and add to github repo
-// make a healthcheck to fly
-
-// if you feel like it, write another pipeline for other branches than master
-// this pipeline should run eslint and tests but not deploy
-// the idea is to have a pipeline to run on every push, not only on pull requests
+// 1. create a remote repo
+// 2. clone the repo
+// 3. copy the phonebook from part 3 to the repo
+// 4. test that the app works
+// 5. start building the pipeline
