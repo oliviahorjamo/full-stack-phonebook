@@ -21,8 +21,6 @@ jobs:
         run: npm install
       - name: Check style
         run: npm run lint
-      - name: Build frontend
-        run: npm run build:ui
       - name: Build and deploy
         if: ${{ github.event_name == 'push' }}
         run: npm run deploy:full
