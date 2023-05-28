@@ -1,51 +1,22 @@
 module.exports = {
-  "env": {
-    "browser": true,
-    "es6": true,
-    "jest/globals": true,
-    "node": true,
-    "cypress/globals": true
-  },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended"
-  ],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
     },
-    "ecmaVersion": 2018,
-    "sourceType": "module"
-  },
-  "plugins": [
-    "react", "jest", "cypress"
-  ],
-  "rules": {
-    "indent": [
-      "error",
-        2
-      ],
-    "linebreak-style": [
-      "error",
-      "unix"
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
     ],
-    "quotes": [
-      "error",
-      "single"
+    "overrides": [
     ],
-    "semi": [
-      "error",
-      "never"
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
     ],
-    "eqeqeq": "error",
-    "no-trailing-spaces": "error",
-    "object-curly-spacing": [
-      "error", "always"
-    ],
-    "arrow-spacing": [
-      "error", { "before": true, "after": true }
-    ],
-    "no-console": "error",
-    "react/prop-types": 0
-  }
+    "rules": {
+    }
 }
