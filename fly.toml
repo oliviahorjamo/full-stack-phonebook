@@ -7,7 +7,7 @@ processes = []
 
 
 [deploy]
-  release_command = "npm run build"
+  release_command = "npm run deploy:full"
 
 [processes]
   app = "node index.js"
