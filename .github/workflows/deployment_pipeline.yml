@@ -23,6 +23,8 @@ jobs:
         run: npm run lint
       - name: Build
         run: npm run build:ui
+      - name: Set up environment variables
+        run: echo "DB_URL=${{ secrets.DB_URL }}" >> $GITHUB_ENV
       - name: Deploy to fly
         run: flyctl deploy --remote-only
         env:
